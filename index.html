@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAO</title>
+	<link href ="css/main.css" rel ="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="logo">
+			<img src="./img/logo.png">
+		</div>
+		<div class="menu">
+			<div id="accueil"></div>
+			<ul id="nav">
+			    <li><a href="#accueil">Accueil</a></li>
+			    <li><a href="#histoire">Histoire</a></li>
+			    <li><a href="#">Les personnages</a></li>
+			    <li><a href="#nouveautées">Nouveautées</a></li>
+			    <li><a href="#animes">Les animes</a></li>
+			</ul>
+		</div>
+		<div class="article">
+		<div id="nouveautées"></div>
+			<h1>Nouveautées : Bientôt la saison 3 de SAO !</h1>
+			<img src="./img/saison3.jpg">
+			<p>
+			Victime d’une agression par un ancien membre des Laughing Coffins, Kirito se réveille à l’intérieur de l’Underworld, une Réalité Virtuelle dont il était testeur.</p>
+			<p>
+			Ignorant comment il est arrivé là, et incapable d’entrer en contact avec le monde réel, il va parcourir Underworld pour chercher le moyen d’en sortir.
+			</p>
+			<p>
+			Il retrouve Eugeo, un jeune Entailleur qu’il avait connu à l’époque, qui recherche toujours Alice, son amie d’enfance, enlevée quelques années plus tôt devant leurs yeux par un des représentants de la plus haute autorité de ce monde : un Chevalier Intègre.
+			</p>
+			<p>
+			Résolus à élucider tous ces mystères, les deux garçons n’hésitent pas à unir leurs forces. Démarre alors une longue et périlleuse aventure vers la Capitale.
+			</p>
+		<div id="histoire"></div>
+			<h1>Histoire</h1>
+			<p>Sword Art Online (ソードアート・オンライン, Sōdo Āto Onrain) est dans un premier temps un light novel écrit par Reki Kawahara, également auteur du light novel Accel World, et illustré par Abec. Il est publié par ASCII Media Works depuis avril 2009 et vingts volumes sont sortis en septembre 2017. La version française est éditée par Ofelbe depuis mars 2015.</p><p> Il a été adapté en plusieurs mangas mais aussi en série télévisée d'animation de 25 épisodes par le studio A-1 Pictures entre juillet et décembre 2012. Un épisode spécial est sorti le 31 décembre 2013, et une seconde saison animée, de 25 épisodes également, a été diffusée entre juillet et décembre 2014. Un film d'animation intitulé Sword Art Online: Ordinal Scale est sorti en février 2017. Sword Art Online a également eu droit à plusieurs adaptations en jeux vidéo sur consoles PlayStation.</p>
+			<p style="color: grey">source :<a href="http://fr.sword-art-online.wikia.com/wiki/Wiki_Sword_Art_Online" style="color: rgba(49, 140, 231, 0.5); text-decoration: none;"> fr.sword-art-online.wikia.com</a></p>
+		<div id="animes"></div>
+			<h1>Les animes</h1>
+			<p>Il ya deux deux arcs de sao qui sont sorti sous forme d'anime :</p>
+			<p>Sword art Online</p>
+			<p>Gun Gale Online</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- SCRIPT anti sélection -->
+	<script language="JavaScript">
+	<!-- begin
+	function disableselect(e){
+	return false;
+	}
+	function reEnable(){
+	return true;
+	}
+	document.onselectstart=new Function ("return false");
+	if (window.sidebar){
+	document.onmousedown=disableselect;
+	document.onclick=reEnable;
+	}
+</script>
+
+<!-- SCRIPT anti clique-droit -->
+<script type="text/javascript">
+	function ejs_nodroit()
+	        {
+	        return(false);
+	        }
+	document.oncontextmenu = ejs_nodroit;
+</script>
+
+<!-- SCRIPT anti F12 & F11 -->
+<script type="text/javascript">
+	document.onkeydown = function () 
+		{ 
+		if(event.keyCode==123)
+		{ 
+		event.keyCode = 0; 
+		event.returnValue = false; 
+		event.cancelBubble = true; 
+		return false; 
+		}
+		if(event.keyCode==122)
+		{ 
+		event.keyCode = 0; 
+		event.returnValue = false; 
+		event.cancelBubble = true; 
+		return false; 
+		}
+	} 
+</script>
+
+<!-- SCRIPT anti crtl+u & crtl+s & ctrl+p & ctrl+shift+i & ctrl+shift+j -->
+<script type="text/javascript">
+	window.onkeydown=function(event){
+    var e=event||window.event;
+    if(e.keyCode===85 && e.ctrlKey===true){
+        e.stopPropagation();
+        e.preventDefault();
+        e.returnValue = false;
+        return false;
+    }
+    if(e.keyCode===83 && e.ctrlKey===true){
+        e.stopPropagation();
+        e.preventDefault();
+        e.returnValue = false;
+        return false;
+    }
+    if(e.keyCode===80 && e.ctrlKey===true){
+        e.stopPropagation();
+        e.preventDefault();
+        e.returnValue = false;
+        return false;
+    }
+    if(e.keyCode===73 && e.shiftKey===true && e.ctrlKey===true){
+        e.stopPropagation();
+        e.preventDefault();
+        e.returnValue = false;
+        return false;
+    }
+    if(e.keyCode===74 && e.shiftKey===true && e.ctrlKey===true){
+        e.stopPropagation();
+        e.preventDefault();
+        e.returnValue = false;
+        return false;
+    }
+}
+</script>
+
+<!-- SCRIPT Cookies -->
+<script type="text/javascript">
+var dropCookie = true;
+var cookieDuration = 14; 
+var cookieName = 'complianceCookie';
+var cookieValue = 'on';
+function createDiv(){
+var bodytag = document.getElementsByTagName('body')[0];
+var div = document.createElement('div');
+div.setAttribute('id','cookie-law');
+div.innerHTML = '<p>En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de Cookies. <a class="close-cookie-banner" href="javascript:void(0);" onclick="removeMe();"><span>Accepter</span></a></p>';
+bodytag.insertBefore(div,bodytag.firstChild);
+document.getElementsByTagName('body')[0].className+=' cookiebanner';
+createCookie(window.cookieName,window.cookieValue, window.cookieDuration);
+}
+function createCookie(name,value,days) {
+if (days) {
+var date = new Date();
+date.setTime(date.getTime()+(days*24*60*60*1000));
+var expires = "; expires="+date.toGMTString();
+}
+else var expires = "";
+if(window.dropCookie) {
+document.cookie = name+"="+value+expires+"; path=/";
+}
+}
+function checkCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0)==' ') c = c.substring(1,c.length);
+if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+}
+return null;
+}
+function eraseCookie(name) {
+createCookie(name,"",-1);
+}
+window.onload = function(){
+if(checkCookie(window.cookieName) != window.cookieValue){
+createDiv();
+}
+}
+function removeMe(){
+var element = document.getElementById('cookie-law');
+element.parentNode.removeChild(element);
+}
+</script>
