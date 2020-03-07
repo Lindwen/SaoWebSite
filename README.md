@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 To edit the files you need a text editor
 [Sublimetext](https://www.sublimetext.com/3)
-or [VisualStudio Code](https://code.visualstudio.com/download) (I use)
+or [VisualStudio Code](https://code.visualstudio.com/download) (I use).
 
 ### Installing
 
